@@ -1,0 +1,334 @@
+{
+	"info": {
+		"_postman_id": "1af0f19e-c1a2-4c6e-99b5-a4c88b674f48",
+		"name": "api_springboot_queenprime",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"hello@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://3.21.184.239:8083/user/checkUser",
+					"protocol": "http",
+					"host": [
+						"3",
+						"21",
+						"184",
+						"239"
+					],
+					"port": "8083",
+					"path": [
+						"user",
+						"checkUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"hello4@gmail.com\",\r\n    \"mobile\":\"1234567890\",\r\n    \"password\":\"111111\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://3.21.184.239:8083/user/register",
+					"protocol": "http",
+					"host": [
+						"3",
+						"21",
+						"184",
+						"239"
+					],
+					"port": "8083",
+					"path": [
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "subscription",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\":24,\r\n    \"planId\":\"999\",\r\n    \"expiryDate\":\"12-12-2020\",\r\n    \"remainingDate\":\"365\",\r\n    \"paymentStatus\":\"yearly plan\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://3.21.184.239:8083/user/subscription",
+					"protocol": "http",
+					"host": [
+						"3",
+						"21",
+						"184",
+						"239"
+					],
+					"port": "8083",
+					"path": [
+						"user",
+						"subscription"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Categories",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://3.21.184.239:8083/allCategories",
+					"protocol": "http",
+					"host": [
+						"3",
+						"21",
+						"184",
+						"239"
+					],
+					"port": "8083",
+					"path": [
+						"allCategories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Categories by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://3.21.184.239:8083/allCategories/1",
+					"protocol": "http",
+					"host": [
+						"3",
+						"21",
+						"184",
+						"239"
+					],
+					"port": "8083",
+					"path": [
+						"allCategories",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Entities",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://3.21.184.239:8083/allEntities",
+					"protocol": "http",
+					"host": [
+						"3",
+						"21",
+						"184",
+						"239"
+					],
+					"port": "8083",
+					"path": [
+						"allEntities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Entities by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://3.21.184.239:8083/allEntities/1",
+					"protocol": "http",
+					"host": [
+						"3",
+						"21",
+						"184",
+						"239"
+					],
+					"port": "8083",
+					"path": [
+						"allEntities",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Posters",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://3.21.184.239:8083/allPosters",
+					"protocol": "http",
+					"host": [
+						"3",
+						"21",
+						"184",
+						"239"
+					],
+					"port": "8083",
+					"path": [
+						"allPosters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Posters by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://3.21.184.239:8083/allPosters/1",
+					"protocol": "http",
+					"host": [
+						"3",
+						"21",
+						"184",
+						"239"
+					],
+					"port": "8083",
+					"path": [
+						"allPosters",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "card",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Subscriptionplan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://3.21.184.239:8083/Subscriptionplan",
+					"protocol": "http",
+					"host": [
+						"3",
+						"21",
+						"184",
+						"239"
+					],
+					"port": "8083",
+					"path": [
+						"Subscriptionplan"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
